@@ -33,7 +33,7 @@ const movieContainer = requiredElements[2].element!;
 const getMovieInfo = async (movie: string) => {
   try {
     const myapiKey = `d156b5e7`;
-    const Url = `http://www.omdbapi.com/?apikey=${myapiKey}&t=${movie}
+    const Url = `https://www.omdbapi.com/?apikey=${myapiKey}&t=${movie}
 `;
     const response = await fetch(Url);
     if (!response.ok) {
